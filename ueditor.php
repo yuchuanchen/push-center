@@ -12,7 +12,12 @@
         div {
             width: 100%;
         }
+
+        .div {
+            color: #F00
+        }
     </style>
+
 </head>
 <body>
 <div>
@@ -20,7 +25,7 @@
 </div>
 <div id="btns">
     <div>
-        <button onclick="getContent()">获取网页内容</button>
+        <button onclick="getContent()">获取编译器内容</button>
         <button onclick="saveEditon()">保存到数据库</button>
         <button onclick="getLastContent()">获取上一次的编辑内容</button>
     </div>
@@ -91,12 +96,12 @@
     }
 
 </script>
-<p>编辑器内容:</p>
+<div class="div">编辑器内容：</div>
 
 <div id="editcontent1"></div>
-<p>从数据库获取：</p>
-
+<div class="div">保存到数据库返回信息：</div>
 <div id="tip"></div>
+<div class="div">上一次编辑信息：</div>
 <div id="editcontent2"></div>
 </body>
 </html>
